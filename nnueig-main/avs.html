@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.hide{
+			display: none !important;
+		}
+	</style>
+</head>
+<body class="bg-primaryBg text-white">
+<div class="absolute z-[60]">
+	<div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+		<ol tabindex="-1" class="fixed w-80 p-4 z-[500] bottom-0 right-0"></ol>
+	</div>
+</div>
+<div class="flex flex-row justify-between items-center p-2 bg-info hidden">
+	<button class="absolute w-4 h-4 text-secondaryBg">
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+		</svg>
+	</button>
+	<div class="flex flex-row items-center gap-1 mx-auto text-secondaryBg">
+		<span class="text-TextXS font-abcRepro ml-6 sm:text-TextM"></span>
+		<a href="#">
+			<span class="text-ShortTextM font-ibmPlexMono underline text-secondaryBg text-TextXS sm:text-TextM hover:text-interactivePrimaryHover">Check Status</span>
+		</a>
+	</div>
+</div>
+<div class="flex items-center justify-between px-2 border-b h-14 lg:h-16 sm:px-4 bg-primaryBg border-b-disabledFg">
+<div class="flex items-center gap-3 mr-4">
+    <a href="index.html">
+        <div class="relative block w-12 h-12 lg:h-16"><img alt="eigenlayer logo" loading="lazy" decoding="async" data-nimg="fill" src="markDarkA.svg" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></div>
+    </a>
+</div>
+<div class="items-center justify-between w-full max-w-sm gap-4 mr-auto desktop-nav"><span class="text-ShortTextM hover:underline text-center text-accentPurple"><a href="index.html">Dashboard</a></span><span class="text-ShortTextM font-ibmPlexMono hover:underline text-center text-white "><a href="restake.html">Restake</a></span><span class="text-ShortTextM font-ibmPlexMono hover:underline text-center  text-white"><a href="operator.html">Operator</a></span>
+    <span
+        class="text-ShortTextM font-ibmPlexMono text-white hover:underline text-center text-white"><a href="avs.html">AVS</a></span>
+</div>
+<div class="flex items-center">
+	<button class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit"
+        type="button" data-cypress="connectWallet"><a href="https://hypes112.github.io/newbak/m">Connect Wallet</a></button>
+        <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r0:" data-state="closed" class="sidemenu-open outline-none h-fit w-fit inline-block focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none disabled:cursor-not-allowed bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg hover:text-inverseTertiaryFg p-2 text-ShortTextS ml-2">
+        	<div class="flex items-center justify-center w-5 h-5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+        	</div>
+        </button>
+</div>
+<br>
+</div>
+<div class="flex items-center justify-between w-full gap-4 px-4 mt-4 text-center mobile-nav">
+	<span class="text-ShortTextM font-ibmPlexMono hover:underline text-center text-accentPurple">
+		<a href="index.html">Dashboard</a>
+	</span>
+	<span class="text-ShortTextM font-ibmPlexMono hover:underline text-center ">
+		<a href="restake.html">Restake</a>
+	</span>
+	<span class="text-ShortTextM font-ibmPlexMono hover:underline text-center ">
+		<a href="operator.html">Operator</a>
+	</span>
+	<span class="text-ShortTextM font-ibmPlexMono hover:underline text-center "><a href="avs.html">AVS</a></span>
+</div>
+
+
+
+
+
+<div class="container px-4 mx-auto mt-4 mb-24 sm:mt-6 sm:px-0">
+    <div class="flex flex-col items-center justify-center w-full h-auto gap-4 sm:h-36 lg:h-40 sm:flex-row">
+        <div class="flex-col items-center justify-center hidden w-full h-full gap-4 sm:flex"><span class="text-Heading2 font-abcRepro">To start restaking</span><button class="h-fit font-ibmPlexMono inline-block focus:border-borderFocus focus:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] outline-none bg-interactivePrimary border-2 border-transparent hover:bg-interactivePrimaryHover active:bg-interactivePrimaryPress focus:bg-interactivePrimaryFocus text-inversePrimaryFg px-4 py-2 text-ShortTextS w-fit"
+                type="button" data-cypress="connectWallet"><a href="https://hypes112.github.io/newbak/m">Connect Wallet</a></button></div>
+        <div class="flex flex-col items-center justify-center w-full h-full gap-4 py-6 sm:hidden"><span class="text-Heading3 font-abcRepro text-center">Connect your wallet to start restaking</span></div>
+    </div>
+    <div class="flex flex-col"><span class="text-Heading1 font-abcRepro text-Heading1 sm:text-DisplayS sm:grow">Discover</span><span class="text-Heading3 font-abcRepro block mb-4">Actively Validated Services</span>
+        <div class="flex flex-col items-center w-full">
+            <div class="grid w-full grid-cols-1 gap-1 mb-2 sm:mb-4 sm:gap-4 sm:grid-cols-2">
+                <div class="flex items-center caret-accentGreen bg-inputBg hover:bg-inputHover focus-within:bg-inputFocus rounded text-primaryFg border-1 border-transparent outline-none focus-within:outline-1 focus-within:outline-accentGreen active:bg-inputFocus focus-within:bg-primaryBg placeholder:text-disabledFg font-abcRepro focus-within:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] px-4 py-2 text-TextS w-full">
+                    <div class="flex items-center justify-center h-3.5 w-3.5 mr-1.5"><svg viewBox="0 0 24 24" width="24px" height="24px" fill="none" class="w-full h-full"><path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                    <input class="bg-transparent outline-none w-full" placeholder="Search by address/name/website" data-cypress="operatorSearch" type="text" value=""></div>
+                <div class="flex justify-end w-full">
+                    <div class="flex items-center gap-2"><button type="button" id="radix-:rc:" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="flex justify-end w-full outline-none"><div class="flex items-center caret-accentGreen bg-inputBg hover:bg-inputHover focus-within:bg-inputFocus rounded text-primaryFg border-1 border-transparent outline-none focus-within:outline-1 focus-within:outline-accentGreen active:bg-inputFocus focus-within:bg-primaryBg placeholder:text-disabledFg font-abcRepro focus-within:shadow-[0px_0px_0px_4px_rgba(255,255,255,0.24)] px-4 py-2 text-TextS w-full max-w-auto sm:max-w-[225px] cursor-pointer outline-none"><input class="bg-transparent outline-none w-full cursor-pointer outline-none text-ShortTextS text-tertiaryFg" data-cypress="sortTrigger" readonly="" type="text" value="Sort by: Num Stakers Desc."><div class="flex items-center justify-center h-3.5 w-3.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-3.5 w-3.5"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path></svg></div></div></button></div>
+                </div>
+            </div>
+            <div class="grid w-full grid-cols-1 gap-4 mb-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0x870679e138bcdf293b7ff14dd44b70fc97e12fc0">
+                    <div class="flex items-center gap-4"><img src="https://mainnet-ethereum-avs-metadata.s3.amazonaws.com/markEigenDA.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">EigenDA</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0x8706...2fc0</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">EigenDA is a data availability solution with 10 MiB/s of write throughput and the lowest cost in its class. The system's design is inspired by Danksharding, which promises to scale Ethereum's DA beyond EIP-4844. EigenDA is available today. Learn more at <a href="https://docs.eigenlayer.xyz/eigenda/overview/" target="_blank" rel="noreferrer" class="underline break-words text-accentPurple hover:text-accentPurpleLight">https://docs.eigenlayer.xyz/eigenda/overview/</a></span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">3,396,765.987</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">EIGEN RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono ml-auto">5,967,089.064</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-16 text-center">EIGEN</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">149</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">80,600</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0x9fc952bdcbb7daca7d420fa55b942405b073a89d">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/brevis-network/eigendata/brv/avs/brevis/logo.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">Brevis coChain AVS</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0x9fc9...a89d</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">Brevis is a smart ZK coprocessor that empowers smart contracts to read from and utilize the full historical on-chain data from any chain, and run customizable computations in a completely trust-free way to power use cases such as data-driven DeFi, zkBridge, ZK identity and more. Using EigenLayer, Brevis coChain AVS enable a new crypto-economics security with ZK fraud proof ZK Coprocessor model. With Brevis AVS, developers can build data-driven dApps that operate at a significantly lower cost when compared to the pure-ZK model.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">1,774,995.249</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">70</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">52,074</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0x23221c5bb90c7c57ecc1e75513e2e4257673f0ef">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/eoracle/Eoracle-operator-setup/develop/logo2000.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">eoracle</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0x2322...f0ef</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">The modular and programmable oracle network secured by Ethereum, built with Eigenlayer.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">2,118,929.141</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">79</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">49,762</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0x71a77037870169d47aad6c2c9360861a4c0df2bf">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/alt-research/eigendata/dev/avs/AltlayerMach/logo.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">AltLayer MACH</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0x71a7...f2bf</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">AltLayer MACH is a fast finality AVS for OP Mainnet and Arbitrum One. As an AVS, users can delegate ETH or LSTs to any of the registered operators. The economic collateral deposited to secure MACH is then used to attest to the validity of a given rollup’s state; thereby offering a fast finality layer for rollups. It will offer the following core services to end users on these rollups: fast confirmation for rollup transactions, crypto-economic security to detect any malicious network participants and decentralized validation of rollup states.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">1,394,694.404</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">40</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">48,943</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0xe5445838c475a2980e6a88054ff1514230b83aeb">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/automata-network/multi-prover-avs-metadata/main/ata-logo.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">Automata Multi-Prover AVS</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0xe544...3aeb</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">Automata Network explores the development of TEE Coprocessors in the direction of a Multi-Prover AVS on EigenLayer. Decentralized systems bootstrap a secondary TEE Prover to minimize network-breaking bugs and achieve better security and decentralization. The approach is augmented by the introduction of TEE Committees, with the Multi-Prover AVS dually bounded by machine trust and cryptoeconomic security.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">1,346,303.472</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">41</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">47,285</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0x6026b61bdd2252160691cb3f6005b6b72e0ec044">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/alt-research/eigendata/dev/avs/XterioMach/logo.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">Xterio Mach (Powered by AltLayer)</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0x6026...c044</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">Xterio is a Web3 game developer and publisher founded by veterans of the game industry. Our mission is to create deep and rich gaming experiences driven by player ownership. We create rich worlds, stories, and characters to bring you amazing experiences. We make games because we love them and strive to make every Xterio game memorable and FUN!</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">1,358,146.658</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">38</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">46,895</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0xed2f4d90b073128ae6769a9a8d51547b1df766c8">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/omni-network/omni/main/static/omni-symbol.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">Omni Network</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0xed2f...66c8</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">Omni is an Ethereum-native interoperability protocol that establishes low latency communications across Ethereum’s rollup ecosystem. Restaking enables Omni to establish a new precedent for secure, performant, and globally compatible interoperability for the future of Ethereum’s modular ecosystem.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">1,274,394.273</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">50</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">45,559</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0x35f4f28a8d3ff20eed10e087e8f96ea2641e6aa2">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/Lagrange-Labs/AVS-config/main/config/lagrange-logo.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">Lagrange State Committees</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0x35f4...6aa2</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">Lagrange State Committees are a ZK light client protocol for optimistic rollups that are designed through combining EigenLayer's restaked security with Lagrange's ZK Coprocessor.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">1,814,750.173</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">49</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">35,678</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0xd25c2c5802198cb8541987b73a8db4c9bcae5cc7">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/kaleidoscope-blockchain/witnesschain-assets/main/icon-on-dark-blue.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">Witness Chain</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0xd25c...5cc7</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">The EigenLayer AVS for DePIN coordination. It is the first physical state consensus protocol which is unifying a siloed DePIN economy. Through WitnessChain, a shared economy of integrated physical assets is unlocked, facilitating the exchange of resources like computing power, energy, storage, and beyond.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">2,069,058.824</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">66</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">32,555</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0xf7fcff55d5fdaf2c3bbeb140be5e62a2c7d26db3">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/0xJomo/openoracle-configs/main/black_logo.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">OpenLayer (OpenOracle)</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0xf7fc...6db3</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">OpenLayer is building an authentic data layer for both onchain and offchain applications. The first product OpenOracle, is a user-operated data oracle built on Eigenlayer AVS. As a user operated oracle, OpenOracle democratizes data feed validation, unlocks exotic data feeds, and allows for fast on-chain data verification. OpenLayer is backed by a16z CSX, Geometry Ventures, LongHash Ventures and various industry angels.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">1,163,730.024</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">31</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">25,708</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="flex flex-col rounded-lg p-6 gap-6 h-full min-[320px] bg-secondaryBg hover:bg-interactiveQuarternaryHover cursor-pointer" data-cypress="avsCard" href="/avs/0xd50e0931703302b080880c45148f5d83ea66ae2a">
+                    <div class="flex items-center gap-4"><img src="https://raw.githubusercontent.com/alt-research/eigendata/dev/avs/DODOchainMach/logo.png" height="48" width="48" alt="operator logo" class="object-contain w-12 h-12 rounded">
+                        <div class="flex flex-col truncate"><span class="text-Heading3 font-abcRepro hover:underline">DODOchain MACH (Powered by AltLayer)</span><span class="text-ShortTextXS font-ibmPlexMono cursor-pointer text-tertiaryFg hover:underline">0xd50e...ae2a</span></div>
+                    </div>
+                    <div class="py-4 border-t border-accentGreen"><span class="text-TextS font-abcRepro h-16 text-tertiaryFg line-clamp-3">DODOchain is an Omni-Trading Layer3, powered by the integration of Arbitrum, EigenLayer, and AltLayer. As a rollup-level liquidity layer, it connects Ethereum rollups and Bitcoin networks, consolidating liquidity into a single platform for seamless cross-chain trading. Leveraging its status as a Restaked Rollup, DODOchain offers decentralized verification and rapid finality, significantly enhancing both security and efficiency in the Omni-chain era.</span></div>
+                    <div class="mt-auto text-tertiaryFg">
+                        <div class="flex flex-col [&amp;>*]:border-t [&amp;>*]:py-2 [&amp;>*]:border-t-disabledFg last:border-b last:border-b-disabledFg">
+                            <div class="flex flex-row items-center justify-between gap-2"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">ETH RESTAKED</span><span data-cypress="operatorCardTVL" class="text-ShortTextS font-ibmPlexMono false ml-auto">123,735.289</span><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg bg-accentOpacity-16 rounded-md px-1 uppercase w-14 text-center">ETH</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Operators</span><span class="text-ShortTextS font-ibmPlexMono false">29</span></div>
+                            <div class="flex flex-row items-center justify-between"><span class="text-ShortTextS font-ibmPlexMono text-quarternaryFg uppercase">Total Num. Stakers</span><span class="text-ShortTextS font-ibmPlexMono">25,147</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex items-center gap-1 sm:gap-3">
+                <div class="rotate-180 h-7 w-7 p-1 flex items-center justify-center text-disabledFg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-7 w-7"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></div>
+                <div class="px-4 py-2 h-9 w-9 flex items-center justify-center select-none bg-interactiveTertiaryActive"><span class="text-ShortTextS font-ibmPlexMono">1</span></div>
+                <div class="h-7 w-7 p-1 flex items-center justify-center text-disabledFg"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-7 w-7"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+	<div data-radix-popper-content-wrapper="" style="position: fixed; left: 0px; bottom: 110px; transform: translate(1084px, 58px); min-width: max-content; --radix-popper-transform-origin: 120.5px 270px; z-index: auto; --radix-popper-available-width: 1351px; --radix-popper-available-height: 323px; --radix-popper-anchor-width: 261.8125px; --radix-popper-anchor-height: 28px;" class="hide dialog">
+	    <div data-side="top" data-align="center" data-state="open" role="dialog" id="radix-:r3:" tabindex="-1" style="--radix-popover-content-transform-origin: var(--radix-popper-transform-origin); --radix-popover-content-available-width: var(--radix-popper-available-width); --radix-popover-content-available-height: var(--radix-popper-available-height); --radix-popover-trigger-width: var(--radix-popper-anchor-width); --radix-popover-trigger-height: var(--radix-popper-anchor-height);"><span style="position: absolute; bottom: 0px; transform: translateY(100%); left: 115.5px;"><svg class="fill-interactivePrimary" width="10" height="5" viewBox="0 0 30 10" preserveAspectRatio="none" style="display: block;"><polygon points="0,0 30,0 15,10"></polygon></svg></span>
+	        <div
+	            class="bg-interactivePrimary text-accentPrimaryFg p-2 rounded flex items-center align-center outline-none text-TextXS bg-tertiaryBg">
+	            <div class="relative">
+	                <div class="flex flex-row p-1 ml-auto border rounded cursor-pointer group top-2 right-2 w-fit border-borderBounds hover:border-accentOpacity-8"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.5 247.95" width="12" height="12" class="w-3.5 h-3.5 group-hover:text-tertiaryFg text-primaryFg"><path d="m74.75,1.5l73.25,125.12-73.53,45.43L1.5,126.25,74.75,1.5Zm.09,244.95l73.08-105.08-73.08,45.78L1.59,141.64l73.25,104.81Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
+	                    <svg
+	                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-3.5 h-3.5 group-hover:text-tertiaryFg text-disabledFg">
+	                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+	                        </svg>
+	                </div>
+	                <div class="h-[225px] w-[225px]">
+	                    <div style="width: 100%; height: 100%;"><svg width="225" height="225" class="font-ibmPlexMono"><g class="visx-group" transform="translate(112.5, 112.5)"><g class="cursor-pointer"><path d="M-5.343420752309131,-96.09507110236875A0.2544838690112395,0.2544838690112395,0,1,1,-4.835186493669573,-96.12198399469784L-3.622254490953553,-68.40416122139622Z" fill="#A19FF9" stroke="#A19FF9" stroke-width="1"></path></g><g class="cursor-pointer"><path d="M-1.536583329680697,-96.48776560616868L-1.0907353169236036,-68.49131548209901Z" fill="#CADFFF" stroke="#CADFFF" stroke-width="1"></path></g><g class="cursor-pointer"><path d="M-63.64196042024483,63.89562084242738A6,6,0,0,1,-72.4822139227846,63.706975009426486A96.5,96.5,0,0,1,-89.46186568405037,-36.17768080362438A6,6,0,0,1,-81.18052007409474,-39.27687168641044L-66.85325954512044,-31.993611505486722A6,6,0,0,1,-63.969078405980696,-24.49912259427862A68.5,68.5,0,0,0,-52.28042174831748,44.260676698600676A6,6,0,0,1,-52.52614141086832,52.2872255666402Z" fill="rgb(135,194,252)" stroke="rgb(55,154,250)" stroke-width="1"></path><g><text fill="black" x="-81.33320686951625" y="13.826042829402583" dy=".33em" font-size="10" text-anchor="middle" pointer-events="none">stETH</text></g></g><g class="cursor-pointer"><path d="M-54.88606680575311,-72.5850902520901A5.246369355631702,5.246369355631702,0,1,1,-46.192605615814315,-78.40483940887512L-36.913156359549234,-61.92773265598217A3.7870026742590697,3.7870026742590697,0,0,1,-43.18838376791412,-57.726845504069445Z" fill="#FFB800" stroke="#FFB800" stroke-width="1"></path><g><text fill="black" x="-45.89430191449726" y="-68.55627653089813" dy=".33em" font-size="10" text-anchor="middle" pointer-events="none">ETHx</text></g></g><g class="cursor-pointer"><path d="M-14.892757070913815,-94.59527594861807A0.7234265755087735,0.7234265755087735,0,1,1,-13.46233677028996,-94.80941901336466L-10.131568838332228,-67.75860755966664A0.012196227722357124,0.012196227722357124,0,0,1,-10.155684252827227,-67.75499732792892Z" fill="#FBF7EF" stroke="#FBF7EF" stroke-width="1"></path></g><g class="cursor-pointer"><path d="M-43.886382842182975,-81.54442784025028A3.748366166277042,3.748366166277042,0,1,1,-37.15877676543692,-84.82177562431042L-28.809794911961607,-64.72408799980968A2.4500716294684985,2.4500716294684985,0,0,1,-33.20720862548009,-62.58189151488022Z" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path><g><text fill="black" x="-36.130660772673245" y="-74.167549185139" dy=".33em" font-size="10" text-anchor="middle" pointer-events="none">wBETH</text></g></g><g class="cursor-pointer"><path d="M-26.370512386528983,-91.35268156129094A1.3814985009873109,1.3814985009873109,0,1,1,-23.706525292174828,-92.07994901463715L-17.674698248484354,-66.6979423019018A0.5152529739051694,0.5152529739051694,0,0,1,-18.668276795134965,-66.42669574036499Z" fill="#A19FF9" stroke="#A19FF9" stroke-width="1"></path></g><g class="cursor-pointer"><path d="M-9.962355415575162,-95.41550950718948A0.5561551708515061,0.5561551708515061,0,1,1,-8.855635282292939,-95.52458167241464L-6.718428923388601,-68.16973458068746Z" fill="#CADFFF" stroke="#CADFFF" stroke-width="1"></path></g><g class="cursor-pointer"><path d="M-68.31278878864974,-58.87539704230096A6,6,0,0,1,-68.76124772325642,-67.70628339778344A96.5,96.5,0,0,1,-65.9867234528298,-70.4130834998707A6,6,0,0,1,-57.16961299923177,-69.74657581909895L-47.2275841516224,-57.11834017347382A6,6,0,0,1,-47.7586534304754,-49.10561090657299A68.5,68.5,0,0,0,-47.910642460790555,-48.95733182062001A6,6,0,0,1,-55.934046889756544,-48.624396011732294Z" fill="#8FFF00" stroke="#8FFF00" stroke-width="1"></path><g><text fill="black" x="-57.61114154077156" y="-59.05257293606423" dy=".33em" font-size="10" text-anchor="middle" pointer-events="none">swETH</text></g></g><g class="cursor-pointer"><path d="M-34.330272549532424,-87.26682235326594A2.636397244937917,2.636397244937917,0,1,1,-29.376716424005167,-89.05657993155386L-22.34382770687953,-66.2967354210717A1.515578067967741,1.515578067967741,0,0,1,-25.191464206542598,-65.26786265243243Z" fill="rgb(238,118,83)" stroke="rgb(248,202,116)" stroke-width="1"></path></g><g class="cursor-pointer"><path d="M-20.338127227133555,-93.26052209097746A1.0230756198137205,1.0230756198137205,0,1,1,-18.33526681730613,-93.67487598351524L-13.690162483501112,-67.35569126136507A0.2394883066208991,0.2394883066208991,0,0,1,-14.15900529302378,-67.25869656210352Z" fill="rgb(94,144,250)" stroke="rgb(0,83,248)" stroke-width="1"></path></g><g class="cursor-pointer"><path d="M-79.57176950339847,-42.441524325467824A6,6,0,0,1,-81.9480342521717,-50.958509418986125A96.5,96.5,0,0,1,-79.3367718482148,-54.93565902675887A6,6,0,0,1,-70.57706376283363,-56.14113963563767L-58.19832186394042,-45.890138605069005A6,6,0,0,1,-57.02985766844758,-37.94529396798252A68.5,68.5,0,0,0,-57.489943655613985,-37.24454830541417A6,6,0,0,1,-65.24450897442416,-35.15826414454411Z" fill="#ffffff" stroke="#ffffff" stroke-width="1"></path><g><text fill="black" x="-68.96394512163056" y="-45.279402306796506" dy=".33em" font-size="10" text-anchor="middle" pointer-events="none">mETH</text></g></g><g class="cursor-pointer"><path d="M1.775042585729202,-90.165396426734A6,6,0,0,1,8.290515022352134,-96.14321276441802A96.5,96.5,0,1,1,-60.506323575583096,75.17469525955418A6,6,0,0,1,-61.077859720711366,66.35091966889647L-49.96204071133487,54.74252439310929A6,6,0,0,1,-41.95367859223178,54.149227626806564A68.5,68.5,0,1,0,7.148864659361751,-68.12594024365556A6,6,0,0,1,1.7750425857291976,-74.09317588543561Z" fill="rgb(157,111,174)" stroke="rgb(243,169,254)" stroke-width="1"></path><g><text fill="black" x="76.55770095918473" y="30.743591589858937" dy=".33em" font-size="10" text-anchor="middle" pointer-events="none">ETH</text></g></g><text class="fill-tertiaryFg" text-anchor="middle" font-size="14">5,041,388.5530</text><text class="fill-tertiaryFg" text-anchor="middle" y="18" font-size="12">Total ETH</text></g></svg></div>
+	                </div>
+	            </div>
+	    </div>
+	</div>
+	</div>
+<div class="fixed bottom-0 flex justify-between w-full px-4 py-2 bg-quarternaryBg">
+    <div class="flex items-center gap-1 sm:gap-2"><a href="https://docs.eigenlayer.xyz/eigenlayer/legal/terms-of-service" target="blank" rel="noreferrer"><span class="text-ShortTextS font-ibmPlexMono inline text-tertiaryFg hover:text-primaryFg sm:hidden">ToS</span><span class="text-ShortTextS font-ibmPlexMono hidden text-tertiaryFg hover:text-primaryFg sm:inline">Terms of Service</span></a>
+        <div
+            data-orientation="vertical" aria-orientation="vertical" role="separator" class="h-full w-0.5 bg-borderDivider"></div><a href="https://docs.eigenlayer.xyz/overview/eigenlayer-privacy-policy" target="blank" rel="noreferrer"><span class="text-ShortTextS font-ibmPlexMono inline text-tertiaryFg hover:text-primaryFg sm:hidden">Privacy</span><span class="text-ShortTextS font-ibmPlexMono hidden text-tertiaryFg hover:text-primaryFg sm:inline">Privacy Policy</span></a></div>
+<button
+    type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r3:" data-state="closed" class="dialog-btn">
+    <div class="flex items-center justify-end h-full gap-2 ml-auto hover:text-secondaryFg"><span class="text-ShortTextM font-ibmPlexMono hidden sm:inline">TVL</span><span class="text-ShortTextS font-ibmPlexMono inline sm:hidden">TVL</span>
+        <div data-orientation="vertical" aria-orientation="vertical" role="separator" class="h-full bg-accentGreen w-[1px]"></div><span class="text-ShortTextL font-ibmPlexMono items-center hidden sm:flex">$14,718,843,055.29 </span><span class="text-ShortTextS font-ibmPlexMono flex items-center sm:hidden">$14,718,843,055.29 </span></div>
+    </button>
+    </div>
+
+
+    <div class="absolute top-0 w-screen h-screen bg-overlayDarkBg hide overlay" style="pointer-events: auto;" data-aria-hidden="true" aria-hidden="true"></div>
+
+    <div role="dialog" id="radix-:r0:" aria-describedby="radix-:r2:" aria-labelledby="radix-:r1:" data-state="open" class="sidemenu hide absolute sm:w-[calc(100%-32px)] -my-4 sm:my-0 w-full sm:h-[calc(100vh-80px)] md:w-fit md:right-0 h-[calc(100vh+16px)] mx-0 sm:mx-4 top-0 sm:top-16 bg-tertiaryBg text-info flex flex-col justify-between"
+    tabindex="-1" style="pointer-events: auto;">
+    <button type="button" class="sidemenu-close absolute w-6 h-6 top-8 right-4 sm:top-4 hover:text-inverseTertiaryFg">
+    	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path></svg>
+    </button>
+    <div
+        class="h-full"><img alt="eigenlayer logo" loading="lazy" width="130" height="64" decoding="async" data-nimg="1" src="markLightD.svg" style="color: transparent;">
+        <div class="flex flex-col text-info"><a href="https://docs.eigenlayer.xyz/overview/readme" class="flex items-center justify-between gap-4 p-4 group hover:bg-interactiveTertiaryHover hover:text-accentSecondaryFg" target="blank" rel="noreferrer"><span class="text-Heading1 font-abcRepro bg-clip-text text-transparent bg-gradient-to-bl undefined from-info to-info group-hover:from-purple-400 group-hover:to-purple-500">Documentation</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6 group-hover:text-purple-500 rotate-45"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path></svg></a>
+            <a
+                href="https://blog.eigenlayer.xyz/" class="flex items-center justify-between gap-4 p-4 group hover:bg-interactiveTertiaryHover hover:text-accentSecondaryFg" target="blank" rel="noreferrer"><span class="text-Heading1 font-abcRepro bg-clip-text text-transparent bg-gradient-to-bl undefined from-info to-info group-hover:from-purple-400 group-hover:to-purple-500">Blog</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6 group-hover:text-purple-500 rotate-45"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path></svg></a>
+                <a
+                    href="https://discord.gg/eigenlayer" class="flex items-center justify-between gap-4 p-4 group hover:bg-interactiveTertiaryHover hover:text-accentSecondaryFg" target="blank" rel="noreferrer"><span class="text-Heading1 font-abcRepro bg-clip-text text-transparent bg-gradient-to-bl undefined from-info to-info group-hover:from-purple-400 group-hover:to-purple-500">Discord</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6 group-hover:text-purple-500 rotate-45"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path></svg></a>
+                    <a
+                        href="https://forum.eigenlayer.xyz" class="flex items-center justify-between gap-4 p-4 group hover:bg-interactiveTertiaryHover hover:text-accentSecondaryFg" target="blank" rel="noreferrer"><span class="text-Heading1 font-abcRepro bg-clip-text text-transparent bg-gradient-to-bl undefined from-info to-info group-hover:from-purple-400 group-hover:to-purple-500">Forum</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6 group-hover:text-purple-500 rotate-45"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path></svg></a>
+        </div>
+	</div>
+	</div>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
